@@ -3,8 +3,8 @@ function transposeProse(lines) {
   let newRowLen = lines[0].length;
   let result = new Array(newRowLen).fill('');
 
-  for (let i = 0; i < lines[0].length; i++) {
-    for (let j = 0; j < lines.length; j++) {
+  for (let i = 0; i < newRowLen; i++) {
+    for (let j = 0; j < newColumnLen; j++) {
       if (newRowLen === 1) {
         result[0] += lines[i];
       } else {
@@ -30,6 +30,11 @@ let test3 =
   "A",
   "A"]
 
+  let test4 = 
+  ["AAAA",
+  "BBBB"]
+
 console.log(transposeProse(test));
 console.log(transposeProse(test2));
 console.log(transposeProse(test3));
+console.log(transposeProse(test4));
