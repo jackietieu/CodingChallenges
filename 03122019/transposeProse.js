@@ -1,11 +1,11 @@
 function transposeProse(lines) {
   // how many rows there are currently
-  let rowLen = lines.length;
+  const rowLen = lines.length;
   // how many cols there are currently
-  let columnLen = lines[0].length; 
+  const columnLen = lines[0].length; 
   //prefill transposed array with empty strings
-  let result = new Array(columnLen).fill(''); 
-  
+  const result = new Array(columnLen).fill(''); 
+
   for (let i = 0; i < columnLen; i++) {
     for (let j = 0; j < rowLen; j++) {
       if (columnLen === 1) {
