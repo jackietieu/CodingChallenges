@@ -30,9 +30,9 @@ let test3 =
   "A",
   "A"]
 
-  let test4 = 
-  ["AAAA",
-  "BBBB"]
+let test4 = 
+["AAAA",
+"BBBB"]
 
 console.log(transposeProse(test));
 console.log(transposeProse(test2));
